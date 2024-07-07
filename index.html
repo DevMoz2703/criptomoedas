@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreador de CryptoMoeda</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-4 mb-4">
+        <div class="container text-center">
+            <h1>Rastreador de Criptomoeda</h1>
+        </div>
+    </header>
+
+    <!--Container-->
+    <div class="container">
+        <div class="input-group mb-4">
+            <input type="text" placeholder="Pesquisar CryptoMoeda..." id="searchInput" class="form-control">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="searchButton">Pesquisar</button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Nome</th>
+                        <th>Símbolo</th>
+                        <th>Preço</th>
+                        <th>Preço de Mudança</th>
+                        <th>Volume 24h</th>
+                        <th>Market Cap</th>
+                    </tr>
+                </thead>
+    
+                <tbody id="cryptoTable">
+                    <!--Detalhes das cryptoMoedas serao inseridos aqui-->
+    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footter class="bg-dark text-white py-4 mt-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+        </div>
+    </footter>
+    
+    <script src="script.js"></script>
+</body>
+</html>
